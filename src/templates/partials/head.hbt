@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <!-- Main Styles -->
-<link rel="stylesheet" href="/css/main.min.css">
+<link rel="stylesheet" href="css/main.min.css">
 
 <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
 <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
