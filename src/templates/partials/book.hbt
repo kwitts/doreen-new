@@ -1,10 +1,10 @@
 <div class="col-lg-3">
-  <div class="card">
-    <h3 class="card-header">Featured</h3>
-    <div class="card-body">
-      <h2 class="card-title">Two Locations</h2>
-      <a href="#" class="btn btn-default">Book Chino Hills</a>
-      <a href="#" class="btn btn-default">Book Seal Beach</a>
-    </div>
+<div class="card">
+  <h3 class="card-header">Make an Appointment</h3>
+  <div class="card-body">
+    <h2 class="card-title">Two Locations</h2>
+    <a href="https://www.styleseat.com/p/122354" target="_blank" class="btn btn-default">Book Chino Hills</a>
+    <a href="https://www.styleseat.com/m/p/594483" target="_blank" class="btn btn-default">Book Seal Beach</a>
   </div>
+</div>
 </div>

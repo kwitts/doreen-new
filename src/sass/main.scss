@@ -37,15 +37,34 @@
 @import "carousel";
 @import "utilities"; // Project specific styles
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background: #313131;
     color: #fff;
     font-family: 'Lato', sans-serif;
+    margin-bottom: 75px;
+    /* Margin bottom by footer height */
+}
+
+body.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/img/girl.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center 55px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Satisfy', serif;
 }
 
@@ -62,8 +81,17 @@ h3 {
     font-size: 18px;
 }
 
+h4 {
+    color: rgb(92, 186, 178);
+    font-size: 18px;
+}
+
 a:hover {
     color: #fff !important;
+}
+
+.container-fluid {
+    padding: 15px;
 }
 
 .navbar {
@@ -126,12 +154,64 @@ a:hover {
     }
 }
 
-main .container {
-    padding-top: 10px;
+main{
+    padding-top: 58px;
+    @media (min-width: 992px) {
+        padding-top: 104px;
+    }
+}
+
+.hero-content {
+    opacity: 0.6;
+
+    .hero-heading {
+        text-align: center;
+        height: 50vh;
+        @media (min-width: 992px) {
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .hero-intro {
+                font-size: 4rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .hero-intro {
+        color: #fff;
+        font-size: 2.7rem;
+    }
+
+    .hero-tagline {
+        font-family: 'Satisfy', serif;
+        font-size: 1.3rem;
+
+        &:after,
+        &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            height: 1px;
+            background: #fff;
+            width: 40px;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
 }
 
 .card {
     padding: 10px;
+    margin-bottom: 15px;
+    color: #313131;
+    font-size: 13px;
 
     .card-header {
         background: #fff;
@@ -141,11 +221,85 @@ main .container {
     .card-body {
         padding: 1.25rem 0.4rem;
     }
+
+    &.booking {
+        min-width: 250px;
+    }
+
+    &.product {
+        min-height: 245px;
+    }
+
+    &.gallery {}
+
+    &.photo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 0;
+        padding-top: 100%;
+        min-width: 250px;
+
+        &.doreen {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("/img/doreen.png");
+
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("/img/doreen.png");
+            }
+        }
+
+        &.curls {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("/img/curls.png");
+
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("/img/curls.png");
+            }
+        }
+
+        &.hipster {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("/img/hipster.png");
+
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("/img/hipster.png");
+            }
+        }
+
+        &.lovecurls {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("/img/curly.png");
+
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("/img/curly.png");
+            }
+        }
+
+        &.luscious {
+            padding-top: 300px;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("/img/girl.jpg");
+
+            &:hover {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("/img/girl.jpg");
+            }
+            @media (min-width: 1200px) {
+                padding-top: 240%;
+                background-position: center;
+            }
+        }
+
+        .photo-title {
+            position: absolute;
+            bottom: 5px;
+
+            h2,
+            h3 {
+                color: #fff;
+            }
+        }
+    }
 }
 
 .btn-default {
     font-size: 14px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     background: #e6e6e6;
     color: #333!important;
     padding: 15px 13px;
@@ -160,8 +314,9 @@ main .container {
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     margin-bottom: 8px;
+    width: 100%;
     @media (min-width: 992px) {
-        max-width: 215px;
+        min-width: 215px;
     }
 
     &:hover {
@@ -177,7 +332,41 @@ footer {
     opacity: 0.5;
     font-size: 12px;
     font-family: 'Lato', sans-serif;
-    margin-top: 40px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+    /* Set the fixed height of the footer here */
+    line-height: 75px;
+    /* Vertically center the text there */
+    p {
+        margin-bottom: 0;
+    }
+}
+
+#instafetch {
+    height:auto;
+    overflow:auto;
+    article {
+        display: inline-block;
+        padding: 10px;
+        @media (min-width: 768px) {
+            flex: 50%;
+            max-width: 50%;
+        }
+        @media (min-width: 992px) {
+            flex: 33.3%;
+            max-width: 33.3%;
+        }
+        @media (min-width: 1200px) {
+            flex: 25%;
+            max-width: 25%;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: auto;
+            display: block;
+        }
+    }
 }
