@@ -12,17 +12,15 @@ body {
 }
 
 body.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/girl.jpg");
-    /* Full height */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/girl.jpg") no-repeat center 55px fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
-    /* Center and scale the image nicely */
-    background-position: center 55px;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-attachment: fixed;
+    overflow: hidden;
 
-    @media (min-width: 1200px){
-        background-size:cover;
+    @media (min-width:768px) {
     }
 }
 
