@@ -18,8 +18,12 @@ body.hero {
     /* Center and scale the image nicely */
     background-position: center 55px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
     background-attachment: fixed;
+
+    @media (min-width: 1200px){
+        background-size:cover;
+    }
 }
 
 h1,
