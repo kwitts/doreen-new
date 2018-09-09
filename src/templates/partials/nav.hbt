@@ -1,7 +1,7 @@
 <header id="header">
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-  <a class="navbar-brand" href="/">Curl Queen Doreen</a>
+  <a class="navbar-brand" href="index.html">Curl Queen Doreen</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <i class="fas fa-bars"></i>
   </button>
