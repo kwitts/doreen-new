@@ -17,7 +17,7 @@ body.hero {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    //height: 100vh;
 
     @media (min-width:768px) {
     }
@@ -128,8 +128,10 @@ main{
 
     .hero-heading {
         text-align: center;
-        height: 50vh;
+        height: 60vh;
+        padding-top:10vh;
         @media (min-width: 992px) {
+            padding-top: 0;
             height: auto;
             position: absolute;
             top: 50%;
@@ -202,44 +204,44 @@ main{
         min-width: 250px;
 
         &.doreen {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("../img/doreen.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6)), url("../img/doreen.png");
 
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../img/doreen.png");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/doreen.png");
             }
         }
 
         &.curls {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("../img/curls.PNG");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6)), url("../img/curlycrown.png");
 
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../img/curls.PNG");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/curlycrown.png");
             }
         }
 
         &.hipster {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("../img/hipster.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6)), url("../img/hipster.png");
 
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../img/hipster.png");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/hipster.png");
             }
         }
 
         &.lovecurls {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("../img/curly.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6)), url("../img/curly.png");
 
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../img/curly.png");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/curly.png");
             }
         }
 
         &.luscious {
             padding-top: 300px;
             width: 100%;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url("../img/girl.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6)), url("../img/girl.jpg");
 
             &:hover {
-                background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url("../img/girl.jpg");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../img/girl.jpg");
             }
             @media (min-width: 1200px) {
                 padding-top: 240%;
